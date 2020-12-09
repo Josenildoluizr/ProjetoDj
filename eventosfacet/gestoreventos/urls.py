@@ -6,6 +6,8 @@ app_name = 'gestoreventos'
 urlpatterns = [
     #pagina inicial
     path('', views.index, name='index'),
-    path('teste', views.teste, name='teste'),
+    path('cursos', views.cursos, name='cursos'),
+    path('eventos', views.eventos, name='eventos'),
+    path('novo_curso', views.novo_curso, name='novo_curso'),
     
 ]

@@ -1,0 +1,16 @@
+{% extends "gestoreventos/base.html" %}
+
+{% block content %}
+
+<h1>Cursos da FACET</h1>
+<ul>
+    {% for curso in cursos %}
+    <li>{{curso.id}} | {{ curso.nome_curso }}</li>
+    {% empty %}
+    <li>Não há cursos cadastrados!</li>
+    {% endfor %}
+
+
+</ul>
+
+{% endblock content %}
